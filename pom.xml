@@ -74,7 +74,7 @@
 
                           <includes>
 
-               <include>${module}CukeTest.java</include>
+               <include>${module}cuketest.java</include>
 
                           </includes>
 
@@ -85,8 +85,6 @@
           </plugins>
 
      </build>
-
- 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
@@ -164,9 +162,5 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>3.7.1</version>
 		</dependency>
-
-
-
-
 	</dependencies>
 </project>
