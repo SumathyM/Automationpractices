@@ -14,7 +14,79 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+ <build>
 
+          <plugins>
+
+               <plugin>
+
+                     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+
+                     <groupId>org.apache.maven.plugins</groupId>
+
+                     <artifactId>maven-compiler-plugin</artifactId>
+
+                     <version>3.8.0</version>
+
+                     <configuration>
+
+                          <source>${java.version 1.8}</source>
+
+                          <target>${java.version 1.8}</target>
+
+                          <encoding>UTF-8</encoding>
+
+                          <compilerArgument>-Xlint:unchecked</compilerArgument>
+
+                          <compilerArgument>-Xlint:deprecation</compilerArgument>
+
+                     </configuration>
+
+               </plugin>
+
+               <plugin>
+
+                     <groupId>org.apache.maven.plugins</groupId>
+
+                     <artifactId>maven-surefire-plugin</artifactId>
+
+                     <version>3.0.0-M3</version>
+
+                     <executions>
+
+                          <execution>
+
+                               <id>test</id>
+
+                               <phase>test</phase>
+
+                               <goals>
+
+                                    <goal>test</goal>
+
+                               </goals>
+
+                          </execution>
+
+                     </executions>
+
+                     <configuration>
+
+                          <includes>
+
+               <include>${module}CukeTest.java</include>
+
+                          </includes>
+
+                    </configuration>
+
+              </plugin>
+
+          </plugins>
+
+     </build>
+
+ 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
