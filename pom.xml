@@ -30,9 +30,9 @@
 
                      <configuration>
 
-                          <source>${java.version 1.8}</source>
+                          <source>1.8</source>
 
-                          <target>${java.version 1.8}</target>
+                          <target>1.8</target>
 
                           <encoding>UTF-8</encoding>
 
